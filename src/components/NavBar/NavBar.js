@@ -1,18 +1,19 @@
 import CartWidget from "../CartWidget/CartWidget"
+import { NavLink, Link } from "react-router-dom"
 
 const Navbar = () => {
     return (
         <nav className="navbar is-dark container">
             <div className="navbar-brand">
-                <div className="navbar-item title is-3">
+                <Link to="/" className="navbar-item title is-3">
                     FireGamers
-                </div>
+                </Link>
             </div>
                 <div className="navbar-menu"> 
                     <div className="navbar-start">
-                        <a className="navbar-item">Consolas</a>
-                        <a className="navbar-item">Juegos</a>
-                        <a className="navbar-item">Accesorios</a>
+                        <NavLink to={`/category/console`} className="navbar-item">Consolas</NavLink>
+                        <NavLink to={`/category/games`} className="navbar-item">Juegos</NavLink>
+                        <NavLink to={`/category/accesories`} className="navbar-item">Accesorios</NavLink>
                     </div>
                     <div className="navbar-end">
                         <div className="navbar-item">
