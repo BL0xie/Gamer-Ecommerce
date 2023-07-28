@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import "./Item.css"
+
 
 const Item = ({id, nombre ,img, price, stock}) => {
     return (
@@ -11,7 +11,7 @@ const Item = ({id, nombre ,img, price, stock}) => {
                     </header>
                     <picture className="card-image">
                         <figure className="image is-4by3">
-                        <img src={img} alt={nombre}></img>
+                            <img src={img} alt={nombre}></img>
                         </figure>
                     </picture>
                     <section className="card-footer">
